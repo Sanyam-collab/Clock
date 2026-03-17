@@ -1,0 +1,107 @@
+/*
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#fff,blue);
+    position: relative;
+}
+.structure{
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*center it
+}
+.clock{
+    width: 100%;
+    height: 100%;
+    background: rgba(235,0,255,0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(40px);
+}
+.clock span{
+    font-size: 85px;
+    width: 110px;
+    color: white;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+.clock span::after{
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    left: 50px;
+    bottom: -8px;
+    transform: translateX(-50%);
+}
+#hrs::after{
+    content: 'HOURS';
+}
+#min::after{
+    content: "MINUTES";
+}
+#sec::after{
+    content: "SECONDS";
+}
+.structure::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: red;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: -1;/*behind the object
+}
+.structure::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    z-index: -1;
+}
+*/
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left,yellow,#fff);
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 80%;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-top: 250px;
+    box-shadow: 20px 20px 150px red;
+}
+.container span{
+    font-size: 75px;
+    color: red;
+    font-weight: 900;
+}
+.time-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 20px;
+}
+.time-box p{
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 900;
+    color: saddlebrown;
+}
